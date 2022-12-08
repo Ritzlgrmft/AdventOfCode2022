@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Day2\" />
+    <None Remove="Day3\" />
+    <None Remove="Day4\" />
+    <None Remove="Day5\" />
+    <None Remove="Day6\" />
+    <None Remove="Day7\" />
+    <None Remove="Day8\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Day2\" />
+    <Folder Include="Day3\" />
+    <Folder Include="Day4\" />
+    <Folder Include="Day5\" />
+    <Folder Include="Day6\" />
+    <Folder Include="Day7\" />
+    <Folder Include="Day8\" />
+  </ItemGroup>
+</Project>
