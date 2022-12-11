@@ -1,4 +1,7 @@
-﻿var monkeys = new Monkey[]
+﻿using static System.Net.Mime.MediaTypeNames;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
+var monkeys = new Monkey[]
 {
 	//new Monkey(new long[] { 79, 98 }, old => old * 19, 23, 2, 3),
 	//new Monkey(new long[] { 54, 65, 75, 74 }, old => old + 6, 19, 2, 0),
@@ -22,10 +25,16 @@ for (var round = 0; round < 10000; round++)
 		while (monkey.Items.Count > 0)
 		{
 			monkey.NumberOfInspections++;
-
 			var oldValue = monkey.Items[0];
 			monkey.Items.RemoveAt(0);
 
+			// The crucial thing is to not modify the test result. Therefore we cannot use an arbitrary number. But the product of the tests works.
+			// We have to ensure that we do not modify the results of the tests (newValue % test == 0).
+			// However, it doesn't matter, if we do another modulo operation before, as long as we do it with a multiple of test.
+			// That means these two operations have the same result:
+			// newValue % test
+			// newValue % (test * x) % test
+			// Since this should work for all monkeys, the save way is to use the product of all Monkeys' tests.
 			var newValue = (long)monkey.Operation(oldValue) % mod;
 			monkeys[newValue % monkey.Test == 0 ? monkey.TrueMonkey : monkey.FalseMonkey].Items.Add(newValue);
 		}
