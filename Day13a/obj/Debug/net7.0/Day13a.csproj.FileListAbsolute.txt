@@ -1,0 +1,17 @@
+/Users/markus/Development/AdventOfCode/Day13a/bin/Debug/net7.0/Day13a
+/Users/markus/Development/AdventOfCode/Day13a/bin/Debug/net7.0/Day13a.deps.json
+/Users/markus/Development/AdventOfCode/Day13a/bin/Debug/net7.0/Day13a.runtimeconfig.json
+/Users/markus/Development/AdventOfCode/Day13a/bin/Debug/net7.0/Day13a.dll
+/Users/markus/Development/AdventOfCode/Day13a/bin/Debug/net7.0/Day13a.pdb
+/Users/markus/Development/AdventOfCode/Day13a/obj/Debug/net7.0/Day13a.csproj.AssemblyReference.cache
+/Users/markus/Development/AdventOfCode/Day13a/obj/Debug/net7.0/Day13a.GeneratedMSBuildEditorConfig.editorconfig
+/Users/markus/Development/AdventOfCode/Day13a/obj/Debug/net7.0/Day13a.AssemblyInfoInputs.cache
+/Users/markus/Development/AdventOfCode/Day13a/obj/Debug/net7.0/Day13a.AssemblyInfo.cs
+/Users/markus/Development/AdventOfCode/Day13a/obj/Debug/net7.0/Day13a.csproj.CoreCompileInputs.cache
+/Users/markus/Development/AdventOfCode/Day13a/obj/Debug/net7.0/Day13a.dll
+/Users/markus/Development/AdventOfCode/Day13a/obj/Debug/net7.0/refint/Day13a.dll
+/Users/markus/Development/AdventOfCode/Day13a/obj/Debug/net7.0/Day13a.pdb
+/Users/markus/Development/AdventOfCode/Day13a/obj/Debug/net7.0/Day13a.genruntimeconfig.cache
+/Users/markus/Development/AdventOfCode/Day13a/obj/Debug/net7.0/ref/Day13a.dll
+/Users/markus/Development/AdventOfCode/Day13a/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/markus/Development/AdventOfCode/Day13a/obj/Debug/net7.0/Day13a.csproj.CopyComplete
