@@ -1,0 +1,15 @@
+/Users/markus/Development/AdventOfCode/Day14a/bin/Debug/net7.0/Day14a
+/Users/markus/Development/AdventOfCode/Day14a/bin/Debug/net7.0/Day14a.deps.json
+/Users/markus/Development/AdventOfCode/Day14a/bin/Debug/net7.0/Day14a.runtimeconfig.json
+/Users/markus/Development/AdventOfCode/Day14a/bin/Debug/net7.0/Day14a.dll
+/Users/markus/Development/AdventOfCode/Day14a/bin/Debug/net7.0/Day14a.pdb
+/Users/markus/Development/AdventOfCode/Day14a/obj/Debug/net7.0/Day14a.csproj.AssemblyReference.cache
+/Users/markus/Development/AdventOfCode/Day14a/obj/Debug/net7.0/Day14a.GeneratedMSBuildEditorConfig.editorconfig
+/Users/markus/Development/AdventOfCode/Day14a/obj/Debug/net7.0/Day14a.AssemblyInfoInputs.cache
+/Users/markus/Development/AdventOfCode/Day14a/obj/Debug/net7.0/Day14a.AssemblyInfo.cs
+/Users/markus/Development/AdventOfCode/Day14a/obj/Debug/net7.0/Day14a.csproj.CoreCompileInputs.cache
+/Users/markus/Development/AdventOfCode/Day14a/obj/Debug/net7.0/Day14a.dll
+/Users/markus/Development/AdventOfCode/Day14a/obj/Debug/net7.0/refint/Day14a.dll
+/Users/markus/Development/AdventOfCode/Day14a/obj/Debug/net7.0/Day14a.pdb
+/Users/markus/Development/AdventOfCode/Day14a/obj/Debug/net7.0/Day14a.genruntimeconfig.cache
+/Users/markus/Development/AdventOfCode/Day14a/obj/Debug/net7.0/ref/Day14a.dll
