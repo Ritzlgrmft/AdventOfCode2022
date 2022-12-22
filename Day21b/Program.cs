@@ -19,24 +19,6 @@ foreach (var line in File.ReadLines("../../../Input.txt"))
 	monkeys.Add(monkey);
 }
 
-//Console.WriteLine(IsRootSatisfied(1, monkeys.ConvertAll(m => m.Clone())));
-//Console.WriteLine(IsRootSatisfied(int.MaxValue, monkeys.ConvertAll(m => m.Clone())));
-//Console.WriteLine(IsRootSatisfied(long.MaxValue, monkeys.ConvertAll(m => m.Clone())));
-//Console.WriteLine(IsRootSatisfied(int.MinValue, monkeys.ConvertAll(m => m.Clone())));
-//Console.WriteLine(IsRootSatisfied((long)Math.Pow(2.0, 64.0), monkeys.ConvertAll(m => m.Clone())));
-
-////var minHumn = 1;
-
-
-////while (!IsRootSatisfied(humn, monkeys.ConvertAll(m => m.Clone())))
-////{
-////	humn++;
-////}
-////Console.WriteLine(humn);
-
-//long IsRootSatisfied(long humn, List<Monkey> monkeys)
-//{
-
 // reduce tree as far as possible without a value of humn
 monkeys.First(m => m.Name == "humn").Value = null;
 
@@ -135,8 +117,6 @@ while (nextMonkeyName != "humn")
 			if (nextMonkey.Monkey1Value != null)
 			{
 				throw new NotImplementedException();
-				//targetValue = targetValue - (long)nextMonkey.Monkey1Value;
-				//nextMonkeyName = nextMonkey.Monkey2Name;
 			}
 			else
 			{
@@ -159,9 +139,6 @@ while (nextMonkeyName != "humn")
 	}
 }
 Console.WriteLine(targetValue);
-//	Console.WriteLine($"{humn}: {monkeys[0].Monkey1Value} = {monkeys[0].Monkey2Value}");
-//	return (long)(monkeys[0].Monkey1Value - monkeys[0].Monkey2Value);
-//}
 
 class Monkey
 {
