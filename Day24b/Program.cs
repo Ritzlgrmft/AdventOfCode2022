@@ -19,7 +19,9 @@ foreach (var line in File.ReadLines("../../../Input.txt"))
 valleyHeight = row - 2;
 
 var positions = new List<(int row, int col)>() { (-1, 0) };
+var goal = (row: valleyHeight - 1, col: valleyWidth - 1);
 var goalReached = false;
+var snacksGot = false;
 var minute = 1;
 while (!goalReached)
 {
@@ -49,14 +51,14 @@ while (!goalReached)
 	var newPositions = new List<(int row, int col)>();
 	foreach (var pos in positions)
 	{
-		if (pos.row == valleyHeight - 1 && pos.col == valleyWidth - 1)
+		if (pos == goal)
 		{
 			goalReached = true;
 		}
 		else
 		{
 			var potentialPositions = new List<(int row, int col)>() { pos };
-			if (pos.col > 0 && pos.row >= 0)
+			if (pos.col > 0 && pos.row < valleyHeight)
 			{
 				potentialPositions.Add((pos.row, pos.col - 1));
 			}
@@ -75,7 +77,26 @@ while (!goalReached)
 			newPositions.AddRange(potentialPositions.Where(p => !blizzards.Any(b => b.Row == p.row && b.Col == p.col)));
 		}
 	}
-	positions = newPositions.Distinct().ToList();
+
+	if (!goalReached)
+	{
+		positions = newPositions.Distinct().ToList();
+	}
+	else if (!snacksGot)
+	{
+		goalReached = false;
+		if (goal.row == 0)
+		{
+			snacksGot = true;
+			goal = (row: valleyHeight - 1, col: valleyWidth - 1);
+			positions = new List<(int row, int col)>() { (-1, 0) };
+		}
+		else
+		{
+			goal = (row: 0, col: 0);
+			positions = new List<(int row, int col)>() { (valleyHeight, valleyWidth - 1) };
+		}
+	}
 
 	Console.WriteLine($"End of minute {minute}: {positions.Count} positions");
 	minute++;
